@@ -1,0 +1,18 @@
+<form>
+    <h1>Atualizando um cliente</h1>
+    <mat-form-field class="form">
+        <mat-label>Nome</mat-label>
+        <input matInput [(ngModel)]="pessoa.nome" placeholder="Ex. Jorge..." name="nome">
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Telefone</mat-label>
+        <input matInput [(ngModel)]="pessoa.telefone" placeholder="Ex. 81999999999" name="telefone">
+    </mat-form-field>
+
+    <div class="buttons">
+        <button (click)="update()"  class="atualizar mat-elevation-z8" mat-stroked-button>Atualizar</button>
+
+        <button (click)="cancel()" class="cancelar mat-elevation-z8" mat-stroked-button >Cancelar</button>
+    </div>
+</form>

@@ -1,0 +1,29 @@
+<form>
+    <h1>Atualizando um veiculo</h1>
+
+    <mat-form-field class="form">
+        <mat-label>Placa</mat-label>
+        <input matInput [(ngModel)]="veiculo.placa" placeholder="Ex. GMHOH36..." name='placa' disabled>
+      </mat-form-field>
+    
+      <mat-form-field class="form">
+        <mat-label>Modelo</mat-label>
+        <input matInput [(ngModel)]="veiculo.modelo" placeholder="Ex. Fusca..." name='modelo' disabled>
+      </mat-form-field>
+
+      <mat-form-field class="form">
+        <mat-label>Cor</mat-label>
+        <input matInput [(ngModel)]="veiculo.cor" placeholder="Ex. Fusca..." name='cor' disabled>
+      </mat-form-field>
+
+      <mat-form-field class="form">
+        <mat-label>Estacionado?</mat-label>
+        <input matInput [(ngModel)]="veiculo.estacionado" placeholder="Ex. true ou false" name='estacionado'>
+      </mat-form-field>
+
+    <div class="buttons">
+        <button (click)="updateByRotativo()" class="atualizar mat-elevation-z8" mat-stroked-button>Atualizar</button>
+
+        <button (click)="cancel()" class="cancelar mat-elevation-z8" mat-stroked-button >Cancelar</button>
+    </div>
+</form>

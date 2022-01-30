@@ -1,0 +1,19 @@
+<form>
+    <h1>Adicionando um novo cliente</h1>
+
+    <mat-form-field class="form">
+        <mat-label>Nome</mat-label>
+        <input matInput [(ngModel)]="pessoa.nome" placeholder="Ex. Jorge..." name='nome'>
+      </mat-form-field>
+    
+      <mat-form-field class="form">
+        <mat-label>Telefone</mat-label>
+        <input matInput [(ngModel)]="pessoa.telefone" type="number" placeholder="Ex. 81999999999" name='telefone'>
+      </mat-form-field>
+
+    <div class="buttons">
+        <button (click)="create()" class="salvar mat-elevation-z8" mat-stroked-button>Salvar</button>
+
+        <button (click)="cancel()" class="cancelar mat-elevation-z8" mat-stroked-button >Cancelar</button>
+    </div>
+</form>

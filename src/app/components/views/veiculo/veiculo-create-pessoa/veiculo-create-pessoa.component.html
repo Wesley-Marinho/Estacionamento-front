@@ -1,0 +1,26 @@
+<form>
+    <h1>Criando um novo veiculo</h1>
+
+    <mat-form-field class="form">
+        <mat-label>Placa</mat-label>
+        <input matInput [(ngModel)]="veiculo.placa" placeholder="Ex. GMHOH36..." name='placa'>
+      </mat-form-field>
+    
+      <mat-form-field class="form">
+        <mat-label>Modelo</mat-label>
+        <input matInput [(ngModel)]="veiculo.modelo" placeholder="Ex. Fusca..." name='modelo'>
+      </mat-form-field>
+
+      <mat-form-field class="form">
+        <mat-label>Cor</mat-label>
+        <input matInput [(ngModel)]="veiculo.cor" placeholder="Ex. Fusca..." name='cor'>
+      </mat-form-field>
+
+
+
+    <div class="buttons">
+        <button (click)="create()" class="salvar mat-elevation-z8" mat-stroked-button>Salvar</button>
+
+        <button (click)="cancel()" class="cancelar mat-elevation-z8" mat-stroked-button >Cancelar</button>
+    </div>
+</form>

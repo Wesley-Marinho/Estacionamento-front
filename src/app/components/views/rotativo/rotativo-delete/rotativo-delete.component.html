@@ -1,0 +1,18 @@
+<form>
+    <h1>Deletando um rotativo</h1>
+    <mat-form-field class="form">
+        <mat-label>Data entrada</mat-label>
+        <input matInput [(ngModel)]="rotativo.dataEntrada" name="entrada" disabled>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Data Saida</mat-label>
+        <input matInput [(ngModel)]="rotativo.dataSaida" name="saida" disabled>
+    </mat-form-field>
+
+    <div class="buttons">
+        <button (click)="delete()" class="deletar mat-elevation-z8" mat-stroked-button>Deletar</button>
+
+        <button (click)="cancel()" class="cancelar mat-elevation-z8" mat-stroked-button >Cancelar</button>
+    </div>
+</form>

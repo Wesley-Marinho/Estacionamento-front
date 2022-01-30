@@ -1,0 +1,10 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    justify-content: flex-end;
+    height: 5%;
+}
+
+h1{
+    font-size: 1rem;
+}

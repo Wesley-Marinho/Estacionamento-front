@@ -1,0 +1,21 @@
+<form>
+    <h1>Criando um novo rotativo</h1>
+
+    <mat-form-field class="form">
+      <mat-label>Data da entrada</mat-label>
+      <input matInput type="datetime-local" [(ngModel)]="rotativo.dataEntrada" name="dataEntrada">
+    </mat-form-field>
+
+    <mat-form-field class="form">
+      <mat-label>Data da saida</mat-label>
+      <input matInput type="datetime-local" [(ngModel)]="rotativo.dataSaida" name="dataSaida">
+    </mat-form-field>
+
+    <div class="buttons">
+        
+        <button (click)="create()" class="salvar mat-elevation-z8" mat-stroked-button>Salvar</button>
+
+        <button (click)="cancel()" class="cancelar mat-elevation-z8" mat-stroked-button >Cancelar</button>
+    </div>
+</form>
+
